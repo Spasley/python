@@ -68,18 +68,22 @@ class test_record_add(unittest.TestCase):
         wd.find_element_by_name("homepage").click()
         wd.find_element_by_name("homepage").clear()
         wd.find_element_by_name("homepage").send_keys(Record_fields.homepage)
-        if not wd.find_element_by_xpath("//div[@id='content']/form/select[1]//option[6]").is_selected():
-            wd.find_element_by_xpath("//div[@id='content']/form/select[1]//option[6]").click()
-        if not wd.find_element_by_xpath("//div[@id='content']/form/select[2]//option[3]").is_selected():
-            wd.find_element_by_xpath("//div[@id='content']/form/select[2]//option[3]").click()
+        wd.find_element_by_xpath(Record_fields.byear_day).click()
+        wd.find_element_by_xpath(Record_fields.byear_month).click()
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(Record_fields.byear)
+<<<<<<< HEAD
         #wd.find_element_by_xpath("//div[@id='content']//label[.='Anniversary:']").click() тоже вроде не надо
         if not wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[5]").is_selected():
             wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[5]").click()
         if not wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[4]").is_selected():
             wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[4]").click()
+=======
+        wd.find_element_by_xpath("//div[@id='content']//label[.='Anniversary:']").click()
+        wd.find_element_by_xpath(Record_fields.ayear_day).click()
+        wd.find_element_by_xpath(Record_fields.ayear_month).click()
+>>>>>>> origin/master
         wd.find_element_by_name("ayear").click()
         wd.find_element_by_name("ayear").clear()
         wd.find_element_by_name("ayear").send_keys(Record_fields.ayear)
@@ -94,7 +98,7 @@ class test_record_add(unittest.TestCase):
         wd.find_element_by_name("notes").send_keys(Record_fields.notes)
         #wd.find_element_by_name("title").click() похоже, случайно кликнул, хз зачем это тут
         wd.find_element_by_name("photo").click()
-        wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
+        wd.find_element_by_xpath(Record_fields.photo).click()
 
     def logout(self, wd):
         # logout
@@ -110,7 +114,11 @@ class test_record_add(unittest.TestCase):
                                             work='345345', fax='456456', homepage='www.d3.ru',
                                             phone2='890890', notes='Cool guy', email='firstmail',
                                             email2='secondemail', email3='thirdenail', ayear='2001',
-                                            byear='2002'))
+                                            byear='2002', byear_day="//div[@id='content']/form/select[1]//option[3]",
+                                            byear_month="//div[@id='content']/form/select[2]//option[3]",
+                                            ayear_day="//div[@id='content']/form/select[3]//option[5]",
+                                            ayear_month="//div[@id='content']/form/select[4]//option[4]",
+                                            photo="//div[@id='content']/form/input[21]")) # _day option[1-31], _month option[1-12]
         self.logout(wd)
 
     def tearDown(self):
