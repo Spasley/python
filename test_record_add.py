@@ -75,7 +75,7 @@ class test_record_add(unittest.TestCase):
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(Record_fields.byear)
-        wd.find_element_by_xpath("//div[@id='content']//label[.='Anniversary:']").click()
+        #wd.find_element_by_xpath("//div[@id='content']//label[.='Anniversary:']").click() тоже вроде не надо
         if not wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[5]").is_selected():
             wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[5]").click()
         if not wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[4]").is_selected():
