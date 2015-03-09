@@ -27,11 +27,33 @@
       <file leaf-file-name="test_group_add.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_group_add.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1547">
-              <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="e#24#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_record_add.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_record_add.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.047285464" vertical-offset="1316" max-vertical-offset="2142">
+              <caret line="79" column="92" selection-start-line="79" selection-start-column="92" selection-end-line="79" selection-end-column="92" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,22 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_record_add.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_record_add.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="929" max-vertical-offset="2142">
-              <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
-              <folding>
-                <element signature="e#24#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="record_fields.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="record_fields.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/record_fields.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6087533" vertical-offset="0" max-vertical-offset="754">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
@@ -77,10 +87,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/group.py" />
-        <option value="$PROJECT_DIR$/test_group_add.py" />
         <option value="$PROJECT_DIR$/env/record_fields.py" />
         <option value="$PROJECT_DIR$/record_fields.py" />
         <option value="$PROJECT_DIR$/test_record_add.py" />
+        <option value="$PROJECT_DIR$/application.py" />
+        <option value="$PROJECT_DIR$/test_group_add.py" />
       </list>
     </option>
   </component>
@@ -149,7 +160,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_record_add">
+  <component name="RunManager" selected="Python tests.py.test in test_group_add.py">
     <configuration default="false" name="py.test in test_group_add.py" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -351,7 +362,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1780822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37091675" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -391,7 +402,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
           <folding>
-            <element signature="e#24#82#0" expanded="true" />
+            <element signature="e#24#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -427,7 +438,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1547">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
           <folding>
-            <element signature="e#24#82#0" expanded="true" />
+            <element signature="e#24#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -455,7 +466,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#24#82#0" expanded="true" />
+            <element signature="e#24#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,6 +475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.5796177" vertical-offset="2474" max-vertical-offset="18173">
           <caret line="230" column="8" selection-start-line="230" selection-start-column="8" selection-end-line="230" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -475,31 +487,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/record_fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_group_add.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="499" max-vertical-offset="1547">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
-            <element signature="e#24#82#0" expanded="true" />
+            <element signature="e#24#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_record_add.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="929" max-vertical-offset="2142">
-          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.047285464" vertical-offset="1316" max-vertical-offset="2142">
+          <caret line="79" column="92" selection-start-line="79" selection-start-column="92" selection-end-line="79" selection-end-column="92" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/record_fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6087533" vertical-offset="0" max-vertical-offset="754">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
