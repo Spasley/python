@@ -76,6 +76,7 @@ class test_group_add(unittest.TestCase):
         self.open_groups_page(wd)
         self.create_group(wd, Group(name="", header="", footer=""))
         self.return_to_groups_page(wd)
+
         self.logout(wd)
 
     def tearDown(self):
