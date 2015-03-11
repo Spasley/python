@@ -30,6 +30,11 @@ class Application:
         wd = self.wd
         wd.find_element_by_link_text("groups").click()
 
+    def open_records_page(self):
+        # open records page
+        wd = self.wd
+        wd.find_element_by_link_text("add new").click()
+
     def create_group(self, Group):
         # init group page
         wd = self.wd
@@ -68,6 +73,7 @@ class Application:
     def filling_form(self, Record_fields):
         # filling form
         wd = self.wd
+        self.open_records_page()
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys(Record_fields.fistname)

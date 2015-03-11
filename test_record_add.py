@@ -10,8 +10,7 @@ def app(request):
     return fixture
 
 def test_test_record_add(app):
-    app.wd.get("http://localhost/addressbook/edit.php")
-    app.login(app)
+    app.login(username="admin", password="secret")
     app.filling_form(Record_fields(firstname='Vova', lastname='Kolenov',
                                             middlename='Michailovich', nickname='nick', title='Title', company='company',
                                             address='address', address2='SecAddress', home='123123', mobile='234234',
