@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-from record_fields import Record_fields
+from model.record_fields import Record_fields
 import pytest
-from application import Application
+from fixture.application import Application
 
 @pytest.fixture
 def app(request):
