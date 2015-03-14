@@ -1,5 +1,4 @@
 __author__ = 'Spasley'
-
 class GroupHelper:
 
     def __init__(self, app):
@@ -37,28 +36,35 @@ class GroupHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("group page").click()
 
+    def select_first_group(self):
+        wd = self.app.wd
+        wd.find_element_by_name("selected[]").click()
+
     def delete_first_group(self):
         wd = self.app.wd
         self.open_groups_page()
-        wd.find_element_by_name("selected[]").click()
+        self.select_first_group()
         wd.find_element_by_name("delete").click()
         self.return_to_groups_page()
 
-    def modify_first_group(self, Group):
+    def change_field_value(self, text, field_name):
+        wd = self.app.wd
+        if text is not None:
+            wd.find_element_by_name(field_name).click()
+            wd.find_element_by_name(field_name).clear()
+            wd.find_element_by_name(field_name).send_keys(text)
+
+    def fill_group_form(self, group):
+        self.change_field_value(group.name, "group_name")
+        self.change_field_value(group.header, "group_header")
+        self.change_field_value(group.footer, "group_footer")
+
+    def modify_first_group(self, new_group_data):
         wd = self.app.wd
         self.open_groups_page()
-        wd.find_element_by_name("selected[]").click()
+        self.select_first_group()
         wd.find_element_by_name("edit").click()
-        wd.find_element_by_name("group_name").click()
-        wd.find_element_by_name("group_name").clear()
-        wd.find_element_by_name("group_name").send_keys(Group.name)
-        wd.find_element_by_name("group_header").click()
-        wd.find_element_by_name("group_header").click()
-        wd.find_element_by_name("group_header").clear()
-        wd.find_element_by_name("group_header").send_keys(Group.header)
-        wd.find_element_by_name("group_footer").click()
-        wd.find_element_by_name("group_footer").clear()
-        wd.find_element_by_name("group_footer").send_keys(Group.footer)
+        self.fill_group_form(new_group_data)
         # submit form
         wd.find_element_by_name("update").click()
         self.return_to_groups_page()
