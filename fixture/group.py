@@ -62,3 +62,4 @@ class GroupHelper:
         # submit form
         wd.find_element_by_name("update").click()
         self.return_to_groups_page()
+

@@ -10,6 +10,10 @@ class RecordHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
 
+    def open_home_page(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text("home").click()
+
     def filling_form(self, Record_fields):
         # filling form
         wd = self.app.wd
@@ -72,3 +76,18 @@ class RecordHelper:
         #wd.find_element_by_name("title").click() похоже, случайно кликнул, хз зачем это тут
         wd.find_element_by_name("photo").click()
         wd.find_element_by_xpath(Record_fields.photo).click()
+
+    def modify_record(self):
+        wd = self.app.wd
+        wd.find_element_by_title("edit").click()
+
+    def delete_record(self):
+        wd = self.app.wd
+        self.open_home_page()
+        wd.find_element_by_name("selected[]").click()
+        wd.find_element_by_xpath("//*[@id='content']/form[2]/div[2]/input").click()
+        wd.switch_to_alert().accept()
+        self.open_home_page()
+
+
+
