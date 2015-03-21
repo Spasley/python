@@ -4,6 +4,7 @@ from fixture.group import GroupHelper
 from fixture.record import RecordHelper
 __author__ = 'Spasley'
 
+
 class Application:
 
     def __init__(self):

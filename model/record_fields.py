@@ -1,5 +1,6 @@
 __author__ = 'Spasley'
 
+
 class Record_fields:
 
     def __init__(self, firstname, lastname, middlename, nickname, title,
