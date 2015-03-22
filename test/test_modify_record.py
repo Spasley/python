@@ -1,8 +1,8 @@
 __author__ = 'Spasley'
-from model.record_fields import Record_fields
+from model.recordfields import RecordFields
 
 def test_record_del(app):
-    app.record.modify_record(Record_fields(firstname='New', lastname='Newsec', fax='777777', homepage='www.d3.ru',
+    app.record.modify_record(RecordFields(firstname='New', lastname='Newsec', fax='777777', homepage='www.d3.ru',
                                             phone2='890890', notes='Cool guy', email='firstmail',
                                             email2='secondemail', email3='thirdenail', ayear='2001',
                                             byear='2002', byear_day="//div[@id='content']/form/select[1]//option[3]",
