@@ -9,11 +9,13 @@ class RecordHelper:
     def open_records_page(self):
         # open records page
         wd = self.app.wd
-        wd.find_element_by_link_text("add new").click()
+        if not len(wd.find_elements_by_xpath("//*[@id='content']/h1")):
+            wd.find_element_by_link_text("add new").click()
 
     def open_home_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        if not wd.current_url.endswith("/addressbook/"):
+            wd.find_element_by_link_text("home").click()
 
     def filling_form(self, RecordFields):
         # filling form
