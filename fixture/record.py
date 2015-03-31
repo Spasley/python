@@ -1,6 +1,7 @@
 __author__ = 'Spasley'
 from model.recordfields import RecordFields
 
+
 class RecordHelper:
 
     def __init__(self, app):
@@ -90,7 +91,9 @@ class RecordHelper:
         self.open_records_page()
         records = []
         for element in wd.find_elements_by_css_selector("tr[name=entry]"):
-            text1 = element.find_elements_by_css_selector('td')[1].text
+            lastname = element.find_elements_by_css_selector('td')[1].text
+            firstname = element.find_elements_by_css_selector('td')[2].text
             id = element.find_element_by_name("selected[]").get_attribute("value")
-            records.append((RecordFields(firstname=text1, id=id)))
+            records.append(RecordFields(firstname=firstname, lastname=lastname, id=id))
         return records
+

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from model.recordfields import RecordFields
 
+
 def test_test_record_add(app):
     old_records = app.record.get_record_list()
     record = RecordFields(firstname='Vova', lastname='Kolenov')
