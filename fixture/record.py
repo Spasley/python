@@ -88,7 +88,7 @@ class RecordHelper:
 
     def get_record_list(self):
         wd = self.app.wd
-        self.open_records_page()
+        self.open_home_page()
         records = []
         for element in wd.find_elements_by_css_selector("tr[name=entry]"):
             lastname = element.find_elements_by_css_selector('td')[1].text
