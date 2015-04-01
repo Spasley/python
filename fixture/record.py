@@ -26,6 +26,7 @@ class RecordHelper:
         self.fill_record_form_select(RecordFields)
         wd.find_element_by_xpath("//*[@id='content']/form[1]/input[1]").click()
         self.open_home_page()
+        self.records_cache = None
 
     def modify_record(self, RecordFields):
         wd = self.app.wd
@@ -34,6 +35,7 @@ class RecordHelper:
         self.fill_record_form_select(RecordFields)
         wd.find_element_by_xpath("//*[@id='content']/form[1]/input[1]").click()
         self.open_home_page()
+        self.records_cache = None
 
     def delete_record(self):
         wd = self.app.wd
@@ -42,6 +44,7 @@ class RecordHelper:
         wd.find_element_by_xpath("//*[@id='content']/form[2]/div[2]/input").click()
         wd.switch_to_alert().accept()
         self.open_home_page()
+        self.records_cache = None
 
     def change_field_value(self, text, field_name):
         wd = self.app.wd
@@ -86,14 +89,17 @@ class RecordHelper:
         self.open_home_page()
         return len(wd.find_elements_by_name("selected[]"))
 
+    records_cache = None
+
     def get_record_list(self):
-        wd = self.app.wd
-        self.open_home_page()
-        records = []
-        for element in wd.find_elements_by_css_selector("tr[name=entry]"):
-            lastname = element.find_elements_by_css_selector('td')[1].text
-            firstname = element.find_elements_by_css_selector('td')[2].text
-            id = element.find_element_by_name("selected[]").get_attribute("value")
-            records.append(RecordFields(firstname=firstname, lastname=lastname, id=id))
-        return records
+        if self.records_cache is None:
+            wd = self.app.wd
+            self.open_home_page()
+            self.records_cache = []
+            for element in wd.find_elements_by_css_selector("tr[name=entry]"):
+                lastname = element.find_elements_by_css_selector('td')[1].text
+                firstname = element.find_elements_by_css_selector('td')[2].text
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                self.records_cache.append(RecordFields(firstname=firstname, lastname=lastname, id=id))
+        return list(self.records_cache)
 
