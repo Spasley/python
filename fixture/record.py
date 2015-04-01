@@ -28,23 +28,29 @@ class RecordHelper:
         self.open_home_page()
         self.records_cache = None
 
-    def modify_record(self, RecordFields):
+    def modify_record_by_index(self, RecordFields, index):
         wd = self.app.wd
-        wd.find_element_by_xpath("//*[@id='maintable']/tbody/tr[2]/td[8]/a/img").click()
+        wd.find_elements_by_css_selector('img[title=Edit]')[index].click()
         self.fill_record_form_text(RecordFields)
         self.fill_record_form_select(RecordFields)
         wd.find_element_by_xpath("//*[@id='content']/form[1]/input[1]").click()
         self.open_home_page()
         self.records_cache = None
 
-    def delete_record(self):
+    def modify_record(self):
+        self.modify_record_by_index(0)
+
+    def delete_record_by_index(self, index):
         wd = self.app.wd
         self.open_home_page()
-        wd.find_element_by_name("selected[]").click()
+        wd.find_elements_by_name("selected[]")[index].click()
         wd.find_element_by_xpath("//*[@id='content']/form[2]/div[2]/input").click()
         wd.switch_to_alert().accept()
         self.open_home_page()
         self.records_cache = None
+
+    def delete_record(self):
+        self.delete_record_by_index(0)
 
     def change_field_value(self, text, field_name):
         wd = self.app.wd
