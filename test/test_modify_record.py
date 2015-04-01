@@ -16,7 +16,7 @@ def test_record_del(app):
                                             photo="//div[@id='content']/form/input[21]")
     app.record.modify_record(record)
     record.id = old_records[0].id
+    assert len(old_records) == app.record.count()
     new_records = app.record.get_record_list()
-    assert len(old_records) == len(new_records)
     old_records[0] = record
     assert sorted(old_records, key=RecordFields.id_or_max) == sorted(new_records, key=RecordFields.id_or_max)
