@@ -28,9 +28,12 @@ class RecordHelper:
         self.open_home_page()
         self.records_cache = None
 
-    def modify_record_by_index(self, RecordFields, index):
+    def open_record_edit_mode(self, index):
         wd = self.app.wd
         wd.find_elements_by_css_selector('img[title=Edit]')[index].click()
+
+    def modify_record_by_index(self, RecordFields, index):
+        wd = self.app.wd
         self.fill_record_form_text(RecordFields)
         self.fill_record_form_select(RecordFields)
         wd.find_element_by_xpath("//*[@id='content']/form[1]/input[1]").click()
@@ -109,3 +112,5 @@ class RecordHelper:
                 self.records_cache.append(RecordFields(firstname=firstname, lastname=lastname, id=id))
         return list(self.records_cache)
 
+    #def get_record_info_from_edit_page(self, index):
+       # self.
