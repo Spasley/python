@@ -115,10 +115,9 @@ class RecordHelper:
                 lastname = element.find_elements_by_css_selector('td')[1].text
                 firstname = element.find_elements_by_css_selector('td')[2].text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
-                all_phones = element.find_elements_by_css_selector('td')[5].text.splitlines()
+                all_phones = element.find_elements_by_css_selector('td')[5].text
                 self.records_cache.append(RecordFields(firstname=firstname, lastname=lastname, id=id,
-                                                       home=all_phones[0], mobile=all_phones[1],
-                                                       work=all_phones[2], phone2=all_phones[3]))
+                                                       all_phones_from_homepage=all_phones))
         return list(self.records_cache)
 
     def get_record_info_from_edit_page(self, index):
