@@ -20,4 +20,4 @@ class Group:
             return maxsize
 
     def __repr__(self):
-        return "%s:%s" % (self.id, self.name)
+        return "%s:%s; %s; %s" % (self.id, self.name, self.header, self.footer)
