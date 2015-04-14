@@ -16,7 +16,8 @@ testdata = [
     for footer in ["", random_string("footer", 20)]
 ]
 
-@pytest.mark.paramtrize("group", testdata, ids=[repr(x) for x in testdata])  # (name, source, representation)
+
+@pytest.mark.parametrize("group", testdata, ids=[repr(x) for x in testdata])  # (name, source, representation)
 def test_test_group_add(app, group):
     old_groups = app.group.get_group_list()
     app.group.create(group)
