@@ -16,7 +16,7 @@ def merge_phones_like_on_homepage(RecordFields):
 def test_phones_on_home_page(app):
     record_from_homepage = app.record.get_record_list()[0]
     record_from_edit_page = app.record.get_record_info_from_edit_page(0)
-     assert record_from_homepage.all_phones_from_homepage == merge_phones_like_on_homepage(record_from_edit_page)
+    assert record_from_homepage.all_phones_from_homepage == merge_phones_like_on_homepage(record_from_edit_page)
 
 
 def test_phones_on_record_view_page(app):

@@ -114,10 +114,13 @@ class RecordHelper:
             for element in wd.find_elements_by_css_selector("tr[name=entry]"):
                 lastname = element.find_elements_by_css_selector('td')[1].text
                 firstname = element.find_elements_by_css_selector('td')[2].text
+                address = element.find_elements_by_css_selector('td')[3].text
+                emails = element.find_elements_by_css_selector('td')[4].text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
                 all_phones = element.find_elements_by_css_selector('td')[5].text
                 self.records_cache.append(RecordFields(firstname=firstname, lastname=lastname, id=id,
-                                                       all_phones_from_homepage=all_phones))
+                                                       all_phones_from_home_page=all_phones, address=address,
+                                                       emails=emails))
         return list(self.records_cache)
 
     def get_record_info_from_edit_page(self, index):
@@ -130,8 +133,9 @@ class RecordHelper:
         firstname = wd.find_element_by_name("firstname").get_attribute("value")
         lastname = wd.find_element_by_name("lastname").get_attribute("value")
         id = wd.find_element_by_name("id").get_attribute("value")
+        address = wd.find_element_by_name("address").get_attribute("value")
         return RecordFields(firstname=firstname, lastname=lastname, id=id, home=home, work=work,
-                            mobile=mobile, phone2=phone2)
+                            mobile=mobile, phone2=phone2, address=address)
 
     def get_record_from_view_page(self, index):
         wd = self.app.wd

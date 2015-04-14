@@ -7,7 +7,7 @@ class RecordFields:
     def __init__(self, firstname=None, lastname=None, middlename=None, nickname=None, title=None,
                  company=None, address=None, address2=None, home=None, mobile=None, work=None, fax=None, homepage=None, phone2=None,
                  notes=None, email=None, email2=None, email3=None, ayear=None, byear=None, byear_day=None, byear_month=None, ayear_day=None,
-                 ayear_month=None, photo=None, id=None, all_phones_from_homepage=None):
+                 ayear_month=None, photo=None, id=None, all_phones_from_home_page=None, emails=None):
         self.firstname = firstname
         self.lastname = lastname
         self.middlename = middlename
@@ -34,7 +34,8 @@ class RecordFields:
         self.ayear_month = ayear_month
         self.photo = photo
         self.id = id
-        self.all_phones_from_homepage = all_phones_from_homepage
+        self.all_phones_from_home_page = all_phones_from_home_page
+        self.emails = emails
 
     def id_or_max(self):
         if self.id:
