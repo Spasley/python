@@ -1,9 +1,12 @@
 __author__ = 'Volodka'
 import re
 from random import randrange
+from model.group import Group
 
 
 def test_contact_info_on_home_page(app):
+    if app.group.count() == 0:
+        app.group.create(Group(name='Test'))
     records_list = app.record.get_record_list()
     index = randrange(len(records_list))
     records_from_home_page = app.record.get_record_list()[index]
