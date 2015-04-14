@@ -134,8 +134,12 @@ class RecordHelper:
         lastname = wd.find_element_by_name("lastname").get_attribute("value")
         id = wd.find_element_by_name("id").get_attribute("value")
         address = wd.find_element_by_name("address").get_attribute("value")
+        email = wd.find_element_by_name("email").get_attribute("value")
+        email2 = wd.find_element_by_name("email2").get_attribute("value")
+        email3 = wd.find_element_by_name("email3").get_attribute("value")
         return RecordFields(firstname=firstname, lastname=lastname, id=id, home=home, work=work,
-                            mobile=mobile, phone2=phone2, address=address)
+                            mobile=mobile, phone2=phone2, address=address, email=email,
+                            email2=email2, email3=email3)
 
     def get_record_from_view_page(self, index):
         wd = self.app.wd
