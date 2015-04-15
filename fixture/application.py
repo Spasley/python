@@ -11,9 +11,9 @@ class Application:
         if browser == "firefox":
             self.wd = webdriver.Firefox()
         elif browser == "chrome":
-            self.wd == webdriver.Chrome()
+            self.wd = webdriver.Chrome()
         elif browser == "ie":
-            self.wd == webdriver.Ie()
+            self.wd = webdriver.Ie()
         else:
             raise ValueError("Unrecognized browser %s" % browser)
         self.session = SessionHelper(self)
