@@ -34,8 +34,3 @@ def merge_phones_like_on_home_page(records_from_edit_page):
                                 filter(lambda x: x is not None,
                                        [records_from_edit_page.home, records_from_edit_page.mobile, records_from_edit_page.work,
                                         records_from_edit_page.phone2]))))
-
-
-'''def merge_address_like_on_home_page(records_from_edit_page):
-    return "\n".join(filter(lambda x: x != "", filter(lambda x: x is not None, records_from_edit_page.address.split())))'''
-
