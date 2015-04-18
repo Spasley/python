@@ -2,7 +2,7 @@
 from model.group import Group
 
 
-def test_test_group_add(app, db,json_groups):
+def test_test_group_add(app, db, json_groups):
     group = json_groups
     old_groups = db.get_group_list()
     app.group.create(group)
