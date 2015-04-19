@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e68c1e9-b9bb-41a7-a835-b47033cc8d5b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/orm.py" afterPath="$PROJECT_DIR$/fixture/orm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_db_matches_ui.py" afterPath="$PROJECT_DIR$/test/test_db_matches_ui.py" />
     </list>
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,13 +25,13 @@
     <favorites_list name="python" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47227925">
+    <splitter split-orientation="horizontal" split-proportion="0.46982166">
       <split-first>
         <leaf>
           <file leaf-file-name="record.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/fixture/record.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="521" max-vertical-offset="3043">
+                <state vertical-scroll-proportion="0.0" vertical-offset="2116" max-vertical-offset="3043">
                   <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
                   <folding>
                     <element signature="e#23#66#0" expanded="true" />
@@ -98,14 +98,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test_db_matches_ui.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="test_db_matches_ui.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/test_db_matches_ui.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="272">
-                  <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-                  <folding>
-                    <element signature="e#23#52#0" expanded="true" />
-                  </folding>
+                <state vertical-scroll-proportion="0.2319688" vertical-offset="0" max-vertical-offset="513">
+                  <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -132,10 +130,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="orm.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="orm.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/fixture/orm.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.86372745" vertical-offset="589" max-vertical-offset="1156">
+                <state vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1156">
                   <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
                   <folding>
                     <element signature="e#23#45#0" expanded="true" />
@@ -205,7 +203,7 @@
           <file leaf-file-name="test_modify_group.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/test_modify_group.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.34068137" vertical-offset="0" max-vertical-offset="499">
+                <state vertical-scroll-proportion="0.331384" vertical-offset="0" max-vertical-offset="513">
                   <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
                   <folding>
                     <element signature="e#23#52#0" expanded="true" />
@@ -290,7 +288,6 @@
         <option value="$PROJECT_DIR$/generator/record.py" />
         <option value="$PROJECT_DIR$/data/records.py" />
         <option value="$PROJECT_DIR$/target.json" />
-        <option value="$PROJECT_DIR$/test/test_db_matches_ui.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/test/test_del_group.py" />
         <option value="$PROJECT_DIR$/test/test_group_add.py" />
@@ -302,6 +299,7 @@
         <option value="$PROJECT_DIR$/fixture/record.py" />
         <option value="$PROJECT_DIR$/test/test_modify_record.py" />
         <option value="$PROJECT_DIR$/fixture/orm.py" />
+        <option value="$PROJECT_DIR$/test/test_db_matches_ui.py" />
       </list>
     </option>
   </component>
@@ -504,7 +502,7 @@
       <recent name="C:\dev\python\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_modify_record.py">
+  <component name="RunManager" selected="Python tests.py.test in test_db_matches_ui.py">
     <configuration default="false" name="py.test in test_record_add.py (1)" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -526,32 +524,6 @@
       <option name="keywords" value="" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test in test_del_group.py" type="tests" factoryName="py.test" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/test/test_del_group.py" />
-      <option name="keywords" value="" />
-      <option name="params" value="--check_ui" />
-      <option name="USE_PARAM" value="true" />
       <option name="USE_KEYWORD" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -632,6 +604,34 @@
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in test_db_matches_ui.py" type="tests" factoryName="py.test" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/test/test_db_matches_ui.py" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -862,18 +862,18 @@
       <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_record_add.py" />
       <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_del_group" />
       <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_record_add.py (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in test_del_group.py" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_group.py" />
-      <item index="7" class="java.lang.String" itemvalue="Python tests.py.test in test_group_add.py" />
-      <item index="8" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_record.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_group.py" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.py.test in test_group_add.py" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_record.py" />
+      <item index="8" class="java.lang.String" itemvalue="Python tests.py.test in test_db_matches_ui.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_record.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_record_add.py (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_group.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_group_add.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_del_group.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_db_matches_ui.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_record.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_record_add.py (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_modify_group.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_group_add.py" />
       </list>
     </recent_temporary>
   </component>
@@ -892,20 +892,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1300716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41112322" sideWeight="0.37828162" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39585605" sideWeight="0.50179" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41112322" sideWeight="0.6217184" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41003272" sideWeight="0.6217184" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39585605" sideWeight="0.49821" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39585605" sideWeight="0.49821" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -933,7 +933,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_db_matches_ui.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1182,16 +1189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_db_matches_ui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding>
-            <element signature="e#23#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="484" max-vertical-offset="1428">
@@ -1274,7 +1271,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_modify_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34068137" vertical-offset="0" max-vertical-offset="499">
+        <state vertical-scroll-proportion="0.331384" vertical-offset="0" max-vertical-offset="513">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding>
             <element signature="e#23#52#0" expanded="true" />
@@ -1286,16 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="499">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/record.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="521" max-vertical-offset="3043">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
           <folding>
             <element signature="e#23#66#0" expanded="true" />
           </folding>
@@ -1334,11 +1321,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/orm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86372745" vertical-offset="589" max-vertical-offset="1156">
+        <state vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1156">
           <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
           <folding>
             <element signature="e#23#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/record.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2116" max-vertical-offset="3043">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="e#23#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_db_matches_ui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2319688" vertical-offset="0" max-vertical-offset="513">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

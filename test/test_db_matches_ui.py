@@ -1,11 +1,8 @@
 __author__ = 'Volodya'
-from model.group import Group
-from timeit import timeit
+from model.recordfields import RecordFields
 
 
 def test_group_list(app, db):
-    print(timeit(lambda: app.group.get_group_list(), number=1))
-    def clean(group):
-        return Group(id=group.id, name=group.name.strip())
-    print(timeit(lambda: map(clean, db.get_group_list()), number=1000))
-    assert False#sorted(ui_list, key=Group.id_or_max) == sorted(db_list, key=Group.id_or_max)
+    db_records = db.get_record_list()
+    ui_records = app.record.get_record_list()
+    assert sorted(ui_records, key=RecordFields.id_or_max) == sorted(db_records, key=RecordFields.id_or_max)
