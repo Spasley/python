@@ -2,6 +2,8 @@ __author__ = 'Spasley'
 from model.recordfields import RecordFields
 import re
 from selenium.webdriver.support.select import Select
+import random
+from random import randrange
 
 
 class RecordHelper:
@@ -178,15 +180,16 @@ class RecordHelper:
         phone2 = re.search("P: (.*)", text).group(1)
         return RecordFields(home=home, work=work, mobile=mobile, phone2=phone2)
 
-    def move_to_group(self, gname, rid):
+    def move_to_group(self, rid):
         wd = self.app.wd
         self.open_home_page()
         self.check_record_by_id(rid)
-        self.select_group_from_dropdown_by_id(gname)
+        self.select_group_from_dropdown_by_id()
         wd.find_element_by_xpath('//*[@id="content"]/form[2]/div[4]/input')
         self.open_home_page()
 
-    def select_group_from_dropdown_by_id(self, gname):
+    def select_group_from_dropdown_by_id(self):
         wd = self.app.wd
-        groups_dropdown = Select(wd.find_element_by_name('to_group'))
-        groups_dropdown.select_by_visible_text(gname)
+        tgroup = randrange(len(wd.find_elements_by_css_selector('select[name="to_group"]>option')))
+        wd.find_elements_by_css_selector('select[name="to_group"]>option')[tgroup].click()
+
