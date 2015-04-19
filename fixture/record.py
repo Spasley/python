@@ -180,16 +180,20 @@ class RecordHelper:
         phone2 = re.search("P: (.*)", text).group(1)
         return RecordFields(home=home, work=work, mobile=mobile, phone2=phone2)
 
-    def move_to_group(self, rid):
+    def move_to_group(self, rid, gname):
         wd = self.app.wd
         self.open_home_page()
         self.check_record_by_id(rid)
-        self.select_group_from_dropdown_by_id()
+        self.select_group_from_dropdown_by_id(gname)
         wd.find_element_by_xpath('//*[@id="content"]/form[2]/div[4]/input')
         self.open_home_page()
 
-    def select_group_from_dropdown_by_id(self):
+    def select_group_from_dropdown_by_id(self, gname):
         wd = self.app.wd
-        tgroup = randrange(len(wd.find_elements_by_css_selector('select[name="to_group"]>option')))
-        wd.find_elements_by_css_selector('select[name="to_group"]>option')[tgroup].click()
+        #tgroup = randrange(len(wd.find_elements_by_css_selector('select[name="to_group"]>option')))
+        groups_list = wd.find_elements_by_css_selector('select[name="to_group"]>option')
+        for group in groups_list:
+            if gname in group.text:
+                wd.find_elements_by_css_selector('select[name="to_group"]>option')[groups_list.index(group)].click()
+
 

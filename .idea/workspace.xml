@@ -66,8 +66,8 @@
           <file leaf-file-name="test_add_record_to_group.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/test_add_record_to_group.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.49707603" vertical-offset="0" max-vertical-offset="513">
-                  <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.5302144" vertical-offset="0" max-vertical-offset="513">
+                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding>
                     <element signature="e#23#66#0" expanded="true" />
                   </folding>
@@ -116,8 +116,8 @@
           <file leaf-file-name="record.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fixture/record.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.788" vertical-offset="2904" max-vertical-offset="3417">
-                  <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.66" vertical-offset="2985" max-vertical-offset="3485">
+                  <caret line="195" column="34" selection-start-line="195" selection-start-column="34" selection-end-line="195" selection-end-column="34" />
                   <folding>
                     <element signature="e#23#66#0" expanded="true" />
                   </folding>
@@ -865,7 +865,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1692" height="1026" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1300716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -874,7 +874,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41003272" sideWeight="0.6217184" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41003272" sideWeight="0.6217184" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -913,7 +913,7 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1303,20 +1303,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/record.py">
+    <entry file="file://$PROJECT_DIR$/test/test_add_record_to_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.788" vertical-offset="2904" max-vertical-offset="3417">
-          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5302144" vertical-offset="0" max-vertical-offset="513">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#23#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_add_record_to_group.py">
+    <entry file="file://$PROJECT_DIR$/fixture/record.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49707603" vertical-offset="0" max-vertical-offset="513">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.66" vertical-offset="2985" max-vertical-offset="3485">
+          <caret line="195" column="34" selection-start-line="195" selection-start-column="34" selection-end-line="195" selection-end-column="34" />
           <folding>
             <element signature="e#23#66#0" expanded="true" />
           </folding>

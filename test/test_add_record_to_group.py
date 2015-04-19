@@ -13,4 +13,4 @@ def test_add_record_to_group(app, db, check_ui):
         app.record.filling_form(RecordFields(firstname='Test'))
     if len(db.get_group_list()) == 0:
         app.group.create(Group(name='Test'))
-    app.record.move_to_group(record.id)
+    app.record.move_to_group(record.id, group.name)
