@@ -33,6 +33,10 @@ class RecordHelper:
         wd = self.app.wd
         wd.find_elements_by_css_selector('img[title=Edit]')[index].click()
 
+    def open_record_edit_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector('a[href="edit.php?id=%s"]' % id).click()
+
     def open_record_readonly_by_index(self, index):
         wd = self.app.wd
         wd.find_elements_by_css_selector('img[title=Details]')[index].click()
@@ -42,6 +46,15 @@ class RecordHelper:
         self.open_record_edit_mode(index)
         self.fill_record_form_text(RecordFields)
         self.fill_record_form_select(RecordFields)
+        wd.find_element_by_xpath("//*[@id='content']/form[1]/input[1]").click()
+        self.open_home_page()
+        self.records_cache = None
+
+    def modify_record_by_id(self, id, new_record_data):
+        wd = self.app.wd
+        self.open_record_edit_by_id(id)
+        self.fill_record_form_text(new_record_data)
+        self.fill_record_form_select(new_record_data)
         wd.find_element_by_xpath("//*[@id='content']/form[1]/input[1]").click()
         self.open_home_page()
         self.records_cache = None
