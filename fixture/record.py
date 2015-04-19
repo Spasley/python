@@ -58,6 +58,15 @@ class RecordHelper:
         self.open_home_page()
         self.records_cache = None
 
+    def delete_record_by_id(self, id):
+        wd = self.app.wd
+        self.open_home_page()
+        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+        wd.find_element_by_xpath("//*[@id='content']/form[2]/div[2]/input").click()
+        wd.switch_to_alert().accept()
+        self.open_home_page()
+        self.records_cache = None
+
     def delete_record(self):
         self.delete_record_by_index(0)
 

@@ -1,15 +1,17 @@
 __author__ = 'Spasley'
 from model.recordfields import RecordFields
-from random import randrange
+import random
 
 
-def test_record_del(app):
-    if app.record.count() == 0:
+def test_record_del(app, db, check_ui):
+    if len(db.get_record_list()) == 0:
         app.record.filling_form(RecordFields(firstname='Test'))
-    old_records = app.record.get_record_list()
-    index = randrange(len(old_records))
-    app.record.delete_record_by_index(index)
+    old_records = db.get_record_list()
+    record = random.choice(old_records)
+    app.record.delete_record_by_id(record.id)
     assert len(old_records) - 1 == app.record.count()
-    new_records = app.record.get_record_list()
-    old_records[index:index + 1] = []
+    new_records = db.get_record_list()
+    old_records.remove(record)
     assert old_records == new_records
+    if check_ui:
+        assert (sorted(app.contact.get_contact_list(), key=RecordFields.id_or_max) == sorted(new_records, key=RecordFields.id_or_max))
