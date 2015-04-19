@@ -1,6 +1,7 @@
 __author__ = 'Spasley'
 from model.recordfields import RecordFields
 import re
+from selenium.webdriver.support.select import Select
 
 
 class RecordHelper:
@@ -71,10 +72,14 @@ class RecordHelper:
         self.open_home_page()
         self.records_cache = None
 
+    def check_record_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+
     def delete_record_by_id(self, id):
         wd = self.app.wd
         self.open_home_page()
-        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+        self.check_record_by_id(id)
         wd.find_element_by_xpath("//*[@id='content']/form[2]/div[2]/input").click()
         wd.switch_to_alert().accept()
         self.open_home_page()
@@ -172,3 +177,16 @@ class RecordHelper:
         mobile = re.search("M: (.*)", text).group(1)
         phone2 = re.search("P: (.*)", text).group(1)
         return RecordFields(home=home, work=work, mobile=mobile, phone2=phone2)
+
+    def move_to_group(self, gname, rid):
+        wd = self.app.wd
+        self.open_home_page()
+        self.check_record_by_id(rid)
+        self.select_group_from_dropdown_by_id(gname)
+        wd.find_element_by_xpath('//*[@id="content"]/form[2]/div[4]/input')
+        self.open_home_page()
+
+    def select_group_from_dropdown_by_id(self, gname):
+        wd = self.app.wd
+        groups_dropdown = Select(wd.find_element_by_name('to_group'))
+        groups_dropdown.select_by_visible_text(gname)
