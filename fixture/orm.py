@@ -56,7 +56,7 @@ class ORMfixture:
         return self.convert_records_to_model(orm_group.records)
 
     @db_session
-    def get_records__not_in_group(self, group):
+    def get_records_not_in_group(self, group):
         orm_group = list(select(g for g in ORMfixture.ORMGroup if g.id == group.id))[0]
         return self.convert_records_to_model(
             select(r for r in ORMfixture.ORMRecord if r.deprecated is None and orm_group not in r.groups))
