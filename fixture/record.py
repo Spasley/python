@@ -190,7 +190,6 @@ class RecordHelper:
 
     def select_group_from_dropdown_by_id(self, gname):
         wd = self.app.wd
-        #tgroup = randrange(len(wd.find_elements_by_css_selector('select[name="to_group"]>option')))
         groups_list = wd.find_elements_by_css_selector('select[name="to_group"]>option')
         for group in groups_list:
             if gname in group.text:
