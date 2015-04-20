@@ -18,4 +18,5 @@ def test_add_record_to_group(app):
     old_records_in_group = db.get_records_in_group(group)
     app.record.move_to_group(record.id, group.name)
     new_records_in_group = db.get_records_in_group(group)
-    assert sorted(old_records_in_group.append(record)) == sorted(new_records_in_group)
+    old_records_in_group.append(record)
+    assert sorted(old_records_in_group) == sorted(new_records_in_group)

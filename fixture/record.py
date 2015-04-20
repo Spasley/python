@@ -185,7 +185,7 @@ class RecordHelper:
         self.open_home_page()
         self.check_record_by_id(rid)
         self.select_group_from_dropdown_by_id(gname)
-        wd.find_element_by_xpath('//*[@id="content"]/form[2]/div[4]/input')
+        wd.find_element_by_xpath('//*[@id="content"]/form[2]/div[4]/input').click()
         self.open_home_page()
 
     def select_group_from_dropdown_by_id(self, gname):
