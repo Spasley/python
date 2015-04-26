@@ -6,6 +6,7 @@ from fixture.orm import ORMfixture
 
 db = ORMfixture(host='127.0.0.1', name='addressbook', user='root', password='')
 
+
 def test_add_record_to_group(app):
     if len(db.get_record_list()) == 0:
         app.record.filling_form(RecordFields(firstname='Test'))

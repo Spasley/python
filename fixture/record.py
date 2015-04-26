@@ -195,4 +195,19 @@ class RecordHelper:
             if gname in group.text:
                 wd.find_elements_by_css_selector('select[name="to_group"]>option')[groups_list.index(group)].click()
 
+    def select_group_from_dropdown_for_remove_by_gname(self, gname):
+        wd = self.app.wd
+        groups_list = wd.find_elements_by_css_selector('select[name="group"]>option')
+        for group in groups_list:
+            if gname in group.text:
+                wd.find_elements_by_css_selector('select[name="group"]>option')
+
+    def remove_record_from_group(self, group):
+        wd = self.app.wd
+        self.select_group_from_dropdown_for_remove_by_gname(group.name)
+        recs = wd.find_elements_by_name('selected[]')
+        recs[random.choice(len(recs))].click()
+        wd.find_element_by_name('remove').click()
+        self.open_home_page()
+
 
