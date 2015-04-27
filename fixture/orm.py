@@ -28,11 +28,6 @@ class ORMfixture:
         groups = Set(lambda: ORMfixture.ORMGroup, table='address_in_groups', column='group_id',
                      reverse='records', lazy=True)
 
-    class ORMRecords_in_groups(db.Entity):
-        _table_ = 'address_in_groups'
-        #id = PrimaryKey(int, column='id')
-        group_id = PrimaryKey(int, column='group_id')
-
     def __init__(self, host, name, user, password):
         self.db.bind('mysql', host=host, database=name, user=user, password=password, conv=decoders)
         self.db.generate_mapping()
@@ -53,11 +48,11 @@ class ORMfixture:
 
     @db_session
     def get_groups_with_records(self):
-        return self.convert_groups_to_model(select(g for g in ORMfixture.ORMRecords_in_groups))
+        return self.convert_groups_to_model(select(g for g in ORMfixture.ORMRecord.groups))
 
     @db_session
-    def get_group_by_id(self, gid):
-        return self.convert_groups_to_model(select(g for g in ORMfixture.ORMGroup if gid == g.id))
+    def get_group_by_id(self, group):
+        return self.convert_groups_to_model(select(g for g in ORMfixture.ORMGroup if g.id == group.id))
 
     @db_session
     def get_record_list(self):

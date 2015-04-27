@@ -38,5 +38,17 @@ class DbFixture:
             cursor.close()
         return list
 
+    def get_groups_with_records(self):
+        list = []
+        cursor = self.connection.cursor()
+        try:
+            cursor.execute("SELECT DISTINCT group_id FROM address_in_groups WHERE deprecated='0000-00-00 00:00:00'")
+            for row in cursor:
+                group_id = row
+                list.append(Group(id=str(group_id)))
+        finally:
+            cursor.close()
+        return list
+
     def destroy(self):
         self.connection.close()
